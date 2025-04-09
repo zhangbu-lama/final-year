@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 // console.log("BACKEND_URL:", BACKEND_URL);
 // console.log("API Request to:", `${BACKEND_URL}${endpoint}`);
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+const BACKEND_URL = "http://localhost:4000";
 
 const Auth = () => {
     const navigate = useNavigate();

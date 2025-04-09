@@ -8,8 +8,9 @@ import Founders from "./pages/Founders";
 import Activities from "./pages/Activities";
 import SignUp from "./pages/SignUp";
 import Trekking from "./pages/Trekking"; // Trekking Page
-import BookingPage from "./pages/BookPage";
+import BookingPage from "./pages/BookingPage";
 import TrekkingDetails from "./pages/TrekkingDetails";
+import Bouldering from "./pages/Bouldering";
 
 const App = () => {
   return (
@@ -35,11 +36,16 @@ const App = () => {
         />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/trekking" element={<Trekking />} />
-        <Route path="/book/:region" element={<BookingPage />} />
+        <Route path="/Bouldering" element={<Bouldering />} />
+        <Route path="/BookingPage/:region" element={<BookingPage />} />
         <Route path="/trekking-details/:region" element={<TrekkingDetails />} />
+        
       </Routes>
     </Router>
   );
 };
 
 export default App;
+
+
+
