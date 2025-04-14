@@ -87,11 +87,15 @@ app.use(cors());
 // Connect to Database
 conntDB();
 
+
 // Routes
 app.use('/api/users', userRoutes);
+// app.use('/api/package', packageRoutes);
 app.use('/api/package', packageRoutes);
 app.use('/api/bookings', bookingRoutes);
 app.use('/api/places', placeRoutes); // Add this route
+app.use(express.json());
+app.use('/api/package', packageRoutes);
 
 // Test Route
 app.get('/', (req, res) => {

@@ -1,5 +1,5 @@
 import Booking from '../models/bookingModel.js';
-import TrekkingPackage from '../models/packageModel.js.js';
+import TrekkingPackage from '../models/packageModel.js';
 
 export const bookTrekkingPackage = async (req, res) => {
     try {
